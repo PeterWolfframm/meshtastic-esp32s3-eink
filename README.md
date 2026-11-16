@@ -1,6 +1,6 @@
 # LastLink: Meshtastic E-Ink node, open hardware, off-grid, verifiable
 
-**Website:** https://crossborderdialogue.eu/ · available in English, Czech and Polish
+**Website:** https://peterwolfframm.github.io/meshtastic-esp32s3-eink/ · available in English, Czech and Polish
 
 An open-hardware, solar-powered [Meshtastic](https://meshtastic.org) LoRa node for ESP32-S3 boards with E-Ink displays:
 

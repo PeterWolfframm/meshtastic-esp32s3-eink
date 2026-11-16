@@ -196,9 +196,6 @@ function fill(html) {
 }
 
 // ---------- render ----------
-// Absolute links to the public domain; relative while developing locally.
-const LOCAL = location.protocol === 'file:' || /^(localhost|127\.|\[::1\])/.test(location.hostname);
-const BASE = LOCAL || !CONFIG.siteUrl ? '' : CONFIG.siteUrl;
 let unmounts = [];
 const labPage = () => { const L = labStrings(lang); return `<h1>${L.title}</h1><h2 id="packet">${L.pkt}</h2><h2 id="chirps">${L.chirp}</h2><h2 id="solar-lab">${L.sol}</h2>`; };
 const indexCache = {};
@@ -227,8 +224,8 @@ function paint(fromHash) {
   $$('#langs button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.lang === lang));
   $('#search').setAttribute('aria-label', `${X.search} (⌘K)`);
   $('#search .lbl').textContent = X.search;
-  $('.brand').href = `${BASE}#/`;
-  $('#nav').innerHTML = ROUTES.map((r) => `<a href="${BASE}#/${r}" ${r === page ? 'aria-current="page"' : ''}>${T.ui.nav[r]}</a>`).join('');
+  $('.brand').setAttribute('href', '#/');
+  $('#nav').innerHTML = ROUTES.map((r) => `<a href="#/${r}" ${r === page ? 'aria-current="page"' : ''}>${T.ui.nav[r]}</a>`).join('');
   $('#foot').innerHTML = fill(T.ui.footer);
   document.title = `${T.ui.nav[page]} · ${T.ui.brand}`;
   const main = $('#main');
