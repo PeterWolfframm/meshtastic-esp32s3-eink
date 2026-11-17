@@ -1,11 +1,11 @@
-import { CONFIG } from './config.js?v=5';
-import { PINS, BOM, BOM_ADDONS, BOM_SIGN, COMPUTE } from './pins.js?v=5';
-import { mountDemo } from './demo.js?v=5';
-import { mountLab, labStrings } from './lab.js?v=5';
-import { EXTRA, mountEink, mountMesh, anchorize, buildIndex, mountPalette, reveal } from './extras.js?v=5';
-import en from './content/en.js?v=5';
-import cs from './content/cs.js?v=5';
-import pl from './content/pl.js?v=5';
+import { CONFIG } from './config.js?v=6';
+import { PINS, BOM, BOM_ADDONS, BOM_SIGN, COMPUTE } from './pins.js?v=6';
+import { mountDemo } from './demo.js?v=6';
+import { mountLab, labStrings } from './lab.js?v=6';
+import { EXTRA, mountEink, mountMesh, anchorize, buildIndex, mountPalette, reveal } from './extras.js?v=6';
+import en from './content/en.js?v=6';
+import cs from './content/cs.js?v=6';
+import pl from './content/pl.js?v=6';
 
 const LANGS = { en, cs, pl };
 const ROUTES = ['home', 'demo', 'hardware', 'build', 'solar', 'lab', 'openhw', 'access', 'faq', 'verify', 'security', 'releases'];

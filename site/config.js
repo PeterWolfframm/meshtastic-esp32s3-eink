@@ -3,9 +3,9 @@ export const CONFIG = {
   // GitHub repo that hosts the site. Public questions are filed as issues here.
   repo: 'PeterWolfframm/meshtastic-esp32s3-eink',
 
-  // Public address of the site. The logo and the navbar link here, so visitors on any
-  // other address (old github.io link, mirror) are sent to the real domain.
-  siteUrl: 'https://crossborderdialogue.eu/',
+  // Public address of the site. Leave empty to keep the logo and navbar links relative,
+  // which works on any host. Only set this once a custom domain actually serves the site.
+  siteUrl: '',
 
   // Private inbox of the central authority for registrations (accessibility add-ons,
   // self-build kits, group purchase). Registrations contain personal data, so they are
